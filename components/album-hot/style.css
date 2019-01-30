@@ -1,0 +1,33 @@
+.ab-hot .ab-album{
+	color: #fff;
+	font-size: 20px;
+	height: 110px;
+	width: 110px;
+	background: url(octobiwan.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	border: 1px solid #ccc;
+}
+.ab-hot .ab-layout{
+	background: rgba(0, 0, 0, 0.4);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	font-size: 10px;
+	transition: 0.5s;
+}
+.ab-hot .ab-layout img{
+	width: 60px;
+	height: 60px;
+	transform: scale(0.6);
+	transition: 0.5s;
+}
+.ab-hot .ab-layout:hover{
+	opacity: 1;
+	font-size: 40px;
+}
+.ab-hot .ab-layout:hover img{
+	transform: scale(1);
+}
