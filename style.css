@@ -21,6 +21,9 @@ div.title h3{
 	font-weight: normal;
 	color: #9d3b9d;
 }
+.last-item{
+	border: none !important;
+}
 
 .wraper{
 	display: grid;
@@ -276,6 +279,27 @@ div.box-user .box-user-info a.isBtn{
 	align-items: center;
 	margin-bottom: 5px;
 }
+.weekly-chart .btn-group{
+	text-align: center;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin-bottom: -3px;
+}
+.weekly-chart .btn-group > *{
+	color: #000;
+	background-color: #DDD;
+	padding: 4px 8px;
+	display: block;
+	flex-grow: 1;
+	border: 2px solid #DDD;
+}
+.weekly-chart .btn-group a.active{
+	border-top: 2px solid #721799;
+	border-bottom: 2px solid white;
+	background-color: white;
+	border-width: 2px 0px 2px 0px;
+}
 .item-best{
 	width: 300px;
 	height: 125px;
@@ -287,7 +311,9 @@ div.box-user .box-user-info a.isBtn{
 	color: #fff !important;
 	margin-top: 100px;
 }
-
+.item-best .item-singer{
+	color: #EEE !important;
+}
 .item-number{
 	font-size: 20px;
 	padding: 0px 8px;
@@ -387,8 +413,68 @@ div.box-user .box-user-info a.isBtn{
 	padding: 0px 5px 5px 0px;
 }
 
+
+div.line{
+	width: 1px;
+	margin: 0px 20px;
+	background-color: #CCC;
+	margin-top: 20px;
+}
+div.title{
+	text-align: left;
+	font-weight: lighter;
+}
+div.title h3{
+	font-weight: normal;
+	color: #9d3b9d;
+}
+.wraper-list{
+ 	display: flex;
+}
+.list-left{
+	flex-grow: 1;
+
+}
+.list-items{
+	
+}
+.list-item{
+	display: flex;
+	align-items: center;
+	padding: 6px 0px;
+	border-bottom: 1px solid #EEE;
+}
+.list-content{
+
+}
+.list-item img{
+	width: 50px;
+	height: 50px;
+}
+.item-title{
+	padding: 2px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.item-singer{
+	padding: 2px;
+	font-size: 12px;
+	color: #888;
+	text-transform: capitalize;
+}
+.list-right{
+	flex-grow: 1;
+}
 /*=================================FOOTER=================================*/
 .footer{
 	grid-column-start: 1;
 	grid-column-end: 3;
+}
+.zalo{
+	width: 53px;
+	height: 49px;
+	background-image: url(img/zalo.png);
+	position: fixed;
+	bottom: 40px;
+	left: 10px;
 }
