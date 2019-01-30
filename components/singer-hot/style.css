@@ -1,0 +1,18 @@
+.singer-hot{
+	display: flex;
+}
+.singer-hotest{
+	margin-right: 12px;
+}
+.singer-hotest img{
+	width: 210px;
+	height: 210px;
+}
+.singer-hot-er{
+	
+}
+.singer-hot-er img{
+	width: 100px;
+	height: 100px;
+	padding: 0px 5px 5px 0px;
+}
