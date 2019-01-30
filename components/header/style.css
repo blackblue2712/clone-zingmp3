@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	padding: 0; margin: 0;
+	font-size: 14px;
+    font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+    background-color: lightblue;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.header{
+	background-color: #1C1C1C;
+	color: #fff;
+}
+.header .header-menu{
+	height: 50px;
+	/*overflow: hidden;	*/
+	list-style: none;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.header .header-menu .menu-btn{
+	flex-grow: 1;
+
+}
+.header .header-menu .menu-btn a{
+	display: block;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+.header-menu .menu-btn:first-child{
+	flex-grow:  0;
+	flex-basis: 180px;
+}
+.header-menu .menu-btn:first-child a{
+	line-height: 0px;
+}
+.header-menu .menu-btn:nth-child(2){
+	flex-grow: 0;
+}
+.header-menu .menu-btn:last-child{
+	/*flex-grow:  0;
+	flex-basis: 180px;
+	text-align: right;
+	margin-right: 20px;*/
+}
+.header-menu .menu-btn:last-child a{
+	
+}
+.header-menu span.avatar img{
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+}
+.header .header-menu .menu-btn input{
+	width: 355px;
+	height: 30px;	
+}
+
+.header .header-menu .menu-btn:hover{
+	background-color: #000000;
+	color: #a845de;
+}
+.header .header-menu .menu-btn:hover a{
+	color: #a845de;
+}
+
+div.box-user{
+	flex-basis: 180px;
+	text-align: right;
+	margin-right: 20px;
+	position: relative;
+}
+div.box-user .arr-top{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	position: absolute;
+	top: 30px;
+	left: 127px;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+div.box-user .box-user-info{
+	width: 310px;
+	height: 140px;
+	background-color: #fff;
+	position: absolute;
+	top: 37px;
+    left: -126px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    opacity: 0;
+}
+div.box-user:hover .box-user-info, div.box-user:hover .arr-top{
+	opacity: 1;
+}
+div.box-user .box-user-info a{
+	color: black;
+	margin-left: 20px;
+	margin-bottom: 10px; 
+	display: block;
+
+}
+div.box-user .box-user-info a:hover{
+	color: #a845de;
+}
+div.box-user .box-user-info a.isBtn{
+	padding: 6px 12px;
+	background-color: #721799;
+	color: white;
+	font-size: 12px;
+}
+.box-user-info img{
+	width: 75px;
+	height: 75px;
+}
