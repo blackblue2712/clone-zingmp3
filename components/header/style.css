@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
 
 body{
 	padding: 0; margin: 0;
@@ -10,11 +10,17 @@ a{
 	text-decoration: none;
 	color: #fff;
 }
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
 .header{
-	background-color: #1C1C1C;
+	
 	color: #fff;
 }
 .header .header-menu{
+	background-color: #1C1C1C;
 	height: 50px;
 	/*overflow: hidden;	*/
 	list-style: none;
@@ -70,9 +76,10 @@ a{
 }
 
 div.box-user{
-	flex-basis: 180px;
+	display: inline-block;
 	text-align: right;
 	margin-right: 20px;
+	margin-left: 180px;
 	position: relative;
 }
 div.box-user .arr-top{
@@ -81,9 +88,9 @@ div.box-user .arr-top{
 	background-color: white;
 	position: absolute;
 	top: 30px;
-	left: 127px;
+	left: 45px;
 	transform: rotate(45deg);
-	opacity: 0;
+	/*opacity: 0;*/
 }
 div.box-user .box-user-info{
 	width: 310px;
@@ -91,15 +98,17 @@ div.box-user .box-user-info{
 	background-color: #fff;
 	position: absolute;
 	top: 37px;
-    left: -126px;
+    left: -215px;
     padding: 20px;
     box-sizing: border-box;
     text-align: left;
     display: flex;
-    opacity: 0;
 }
-div.box-user:hover .box-user-info, div.box-user:hover .arr-top{
-	opacity: 1;
+div.box-user .menu-hide{
+	display: none;
+}
+.box-user:hover .menu-hide{
+	display: block;
 }
 div.box-user .box-user-info a{
 	color: black;
@@ -120,4 +129,33 @@ div.box-user .box-user-info a.isBtn{
 .box-user-info img{
 	width: 75px;
 	height: 75px;
+}
+/*========================================*/
+.header-menu-child{
+	display: flex;
+	background-color: #E4E4E4;
+	height: 40px;
+}
+.header-menu-child .menu-btn{
+	flex-grow: 1;
+}
+
+.header-menu-child .menu-btn a{
+	display: block;
+	line-height: 40px;
+	color: #000;
+	text-align: center;
+}
+.header-menu-child .menu-btn:last-child{
+	flex-grow: 2;
+}
+.header-menu-child .menu-btn:last-child a{
+	text-align: right;
+	margin-right: 20px;
+}
+.header-menu-child .menu-btn:hover{
+	background-color: #FFFFFF;
+}
+.header-menu-child .menu-btn:hover a{
+	color: #a845de;
 }
