@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
 	margin: 0;
 	padding: 0;
@@ -169,6 +170,9 @@ div.box-user .box-user-info a.isBtn{
 	color: #000;
 	text-align: center;
 }
+.header-menu-child .menu-btn:first-child{
+	flex-grow: 0;
+}
 .header-menu-child .menu-btn:last-child{
 	flex-grow: 2;
 }
@@ -182,6 +186,10 @@ div.box-user .box-user-info a.isBtn{
 .header-menu-child .menu-btn:hover a{
 	color: #a845de;
 }
+.header-menu-child .menu-btn:first-child:hover a{
+	color: #E4E4E4;
+}
+
 
 /*=================================CONTAINER=================================*/
 .container{
@@ -469,12 +477,46 @@ div.title h3{
 .footer{
 	grid-column-start: 1;
 	grid-column-end: 3;
+	background-color: #222428;
 }
 .zalo{
 	width: 53px;
 	height: 49px;
 	background-image: url(img/zalo.png);
 	position: fixed;
-	bottom: 40px;
+	bottom: 100px;
 	left: 10px;
+}
+.container-footer{
+	margin: 0px 270px;
+	margin-top: 20px;
+	display: flex;
+}
+.ft-left{
+	flex-grow: 1; 
+}
+.ft-left img{
+	float: left;
+	vertical-align: middle;
+}
+.ft-left p{
+	font-size: 12px;
+	color: #999;
+}
+.ft-middle{
+	flex-grow: 1;
+}
+.ft-link{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ft-link li{
+	padding: 6px 10px;
+	margin-right: 10px;
+	font-size: 12px;
+	color: #999;
+}
+.ft-right{
+	flex-grow: 1;
+	font-size: 30px;
 }
